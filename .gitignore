@@ -39,3 +39,7 @@ package-lock.json
 
 # Changeset cache
 .changeset/.cache/
+
+# Local Notes
+FUTURE_UPGRADES.md
+docs/release-process.md
