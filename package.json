@@ -18,7 +18,7 @@
     "@types/ws": "^8.18.1",
     "@typescript-eslint/eslint-plugin": "^8.61.1",
     "@typescript-eslint/parser": "^8.61.1",
-    "eslint": "^8.0.0",
+    "eslint": "^10.5.0",
     "mongodb": "^7.3.0",
     "mongodb-memory-server": "^11.2.0",
     "prettier": "^3.0.0",
