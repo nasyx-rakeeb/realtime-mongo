@@ -1,0 +1,66 @@
+{
+  "name": "@realtimemongo/react",
+  "version": "0.1.0",
+  "description": "React hooks for @realtimemongo — useDocument, useConnectionState, RealtimeMongoProvider",
+  "author": "realtime-mongo contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/nasyx-rakeeb/realtime-mongo#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasyx-rakeeb/realtime-mongo"
+  },
+  "bugs": {
+    "url": "https://github.com/nasyx-rakeeb/realtime-mongo/issues"
+  },
+  "keywords": [
+    "mongodb",
+    "realtime",
+    "websocket",
+    "react",
+    "firestore",
+    "change-streams",
+    "live-data",
+    "subscription"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --clean --external react",
+    "lint": "eslint \"src/**/*.tsx\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@realtimemongo/client": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "provenance": "true"
+  }
+}

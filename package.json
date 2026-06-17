@@ -1,0 +1,50 @@
+{
+  "name": "realtimemongo-monorepo",
+  "private": true,
+  "packageManager": "pnpm@11.0.8",
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.61.1",
+    "@typescript-eslint/parser": "^8.61.1",
+    "eslint": "^8.0.0",
+    "mongodb": "^7.3.0",
+    "mongodb-memory-server": "^11.2.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0",
+    "ws": "^8.21.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "mongodb-memory-server"
+    ]
+  },
+  "publishConfig": {
+    "provenance": "true"
+  },
+  "keywords": [
+    "mongodb",
+    "realtime",
+    "websocket",
+    "react",
+    "firestore",
+    "change-streams",
+    "live-data",
+    "subscription"
+  ]
+}

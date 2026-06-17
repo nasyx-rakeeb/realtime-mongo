@@ -1,0 +1,73 @@
+{
+  "name": "@realtimemongo/client",
+  "version": "0.1.0",
+  "description": "Browser and Node.js client SDK for @realtimemongo — Firestore-like realtime subscriptions for MongoDB",
+  "author": "realtime-mongo contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/nasyx-rakeeb/realtime-mongo#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasyx-rakeeb/realtime-mongo"
+  },
+  "bugs": {
+    "url": "https://github.com/nasyx-rakeeb/realtime-mongo/issues"
+  },
+  "keywords": [
+    "mongodb",
+    "realtime",
+    "websocket",
+    "react",
+    "firestore",
+    "change-streams",
+    "live-data",
+    "subscription"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "browserslist": [
+    "Chrome >= 80",
+    "Firefox >= 75",
+    "Safari >= 14",
+    "Edge >= 80"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "vitest run",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@realtimemongo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@realtimemongo/server": "workspace:*",
+    "@types/ws": "^8.18.1",
+    "mongodb": "^7.3.0",
+    "mongodb-memory-server": "^11.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0",
+    "ws": "^8.21.0"
+  },
+  "publishConfig": {
+    "provenance": "true"
+  }
+}
