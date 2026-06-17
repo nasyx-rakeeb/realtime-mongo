@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/) and [Keep a C
 
 ---
 
-## [0.1.0] — 2024-06-17
+## [0.1.0] — 2026-06-17
 
 ### Initial release
 
