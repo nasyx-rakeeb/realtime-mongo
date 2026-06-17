@@ -35,7 +35,7 @@ const unsubscribe = client
 ## Requirements
 
 - **MongoDB 6.0+** running as a **Replica Set** (required for Change Streams)
-- **Node.js 18.0.0+** on the server
+- **Node.js 22.0.0+** on the server
 - **Any modern browser** on the client (Chrome 80+, Firefox 75+, Safari 14+, Edge 80+)
 
 ---

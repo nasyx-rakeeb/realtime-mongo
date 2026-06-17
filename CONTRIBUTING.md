@@ -8,7 +8,7 @@ Thank you for your interest in contributing. This guide covers everything you ne
 
 | Tool    | Version            | Notes                              |
 | ------- | ------------------ | ---------------------------------- |
-| Node.js | 18.0.0+            | Required for `crypto.randomUUID()` |
+| Node.js | 22.0.0+            | Required for ES2024 Regex features |
 | pnpm    | 8.0.0+             | `npm install -g pnpm`              |
 | MongoDB | 6.0+ (Replica Set) | Required for Change Streams        |
 
