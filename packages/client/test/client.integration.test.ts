@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll, afterAll, beforeEach } from 'vitest';
 import { MongoMemoryReplSet } from 'mongodb-memory-server';
 import { MongoClient } from 'mongodb';
 import WebSocket from 'ws';
-import { createRealtimeMongo, RealtimeMongoInstance } from '../../server/src';
+import { createRealtimeMongo, RealtimeMongoInstance } from '@realtimemongo/server';
 import { RealtimeMongoClient } from '../src';
 
 // ---------------------------------------------------------------------------
